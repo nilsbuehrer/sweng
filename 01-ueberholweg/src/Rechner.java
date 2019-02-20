@@ -1,4 +1,5 @@
 public class Rechner {
+
     public static void main(String[] args) {
 
         double fzA = 5; // Länge von deinem Auto (Meter)
