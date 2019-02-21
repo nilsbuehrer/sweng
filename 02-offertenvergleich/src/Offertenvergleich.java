@@ -27,28 +27,27 @@ public class Offertenvergleich {
 
         if (lZeitA > 14 && lZeitB > 14) {
             System.out.println("Nichts bestellen");
-            return;
-        }
-
-        if (preisA < preisB) {
-            if (lZeitA <= 14) {
-                System.out.println("Bei A bestellen");
-            } else if (lZeitB <= 14) {
-                System.out.println("Bei B bestellen");
-            }
-        } else if (preisB < preisA) {
-            if (lZeitB <= 14) {
-                System.out.println("Bei B bestellen");
-            } else if (lZeitA <= 14) {
-                System.out.println("Bei A bestellen");
-            }
         } else {
-            if (lZeitA <= 14 && lZeitB > 14) {
-                System.out.println("Bei A bestellen");
-            } else if (lZeitB <= 14 && lZeitA > 14) {
-                System.out.println("Bei B bestellen");
+            if (preisA < preisB) {
+                if (lZeitA <= 14) {
+                    System.out.println("Bei A bestellen");
+                } else if (lZeitB <= 14) {
+                    System.out.println("Bei B bestellen");
+                }
+            } else if (preisB < preisA) {
+                if (lZeitB <= 14) {
+                    System.out.println("Bei B bestellen");
+                } else if (lZeitA <= 14) {
+                    System.out.println("Bei A bestellen");
+                }
             } else {
-                System.out.println("Freie Wahl");
+                if (lZeitA <= 14 && lZeitB > 14) {
+                    System.out.println("Bei A bestellen");
+                } else if (lZeitB <= 14 && lZeitA > 14) {
+                    System.out.println("Bei B bestellen");
+                } else {
+                    System.out.println("Freie Wahl");
+                }
             }
         }
     }
