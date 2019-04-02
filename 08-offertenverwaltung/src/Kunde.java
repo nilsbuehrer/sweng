@@ -14,6 +14,13 @@ public class Kunde {
         this.nummer = nummer;
     }
 
+    public Kunde(String name, String adresse, double marge, int nummer) {
+        this.name = name;
+        this.adresse = adresse;
+        this.marge = marge;
+        this.nummer = nummer;
+    }
+
     public void print() {
         System.out.println("\nKunde: " + this.name);
         System.out.println("Adresse: " + this.adresse);
